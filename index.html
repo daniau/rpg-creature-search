@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPG Creature Search App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">  
+</head>
+
+<body>
+
+
+  <main>
+    <h1>RPG Creature Search App</h1>
+    <div class="container">
+      <label for="search-input">Search for Creature Name or ID:</label>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Enter Name or ID" required>
+    <button id="search-button">Search</button>
+      </div>
+    
+    <div class="creature-info">
+      <div id="loading" >Loading...</div>
+      <div>
+        <span id="creature-name"></span>
+      <span id="creature-id"></span>
+      </div>
+      
+      <div><span id="weight"></span>
+      <span id="height" ></span>
+    </div>
+    <div>
+      <div id="types"></div>
+      <div id="special"></div>
+    </div>
+      
+    </div>
+    <div class="creature-stats">
+    <div id="base">Base</div>
+    <div id="state">Stats</div>
+    <div >HP:</div>
+    <div id="hp"></div>
+    <div>Attack:</div>
+    <div id="attack"></div>
+    <div>Defense:</div>
+    <div id="defense"></div>
+    <div>Sp. Attack:</div>
+    <div id="special-attack"></div>
+    <div>Sp. Defense:	</div>
+    <div id="special-defense"></div>
+    <div>Speed:	</div>
+    <div id="speed"></div>
+  </div>
+</div>
+  </main>
+  <script src="  script.js"></script>
+
+</body>
+
+</html>

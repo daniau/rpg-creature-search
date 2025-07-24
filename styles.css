@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: 30px;
+  background-color: #1b1b32;
+  color: #0a0a23;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f6f7;
+  padding: 15px;
+  width: min(100%,360px);
+  height: 580px;
+  border-radius: 25px;
+  box-shadow: 8px 6px 0 0px gray;
+  
+}
+h1{
+  color: #f5f6f7;
+  text-align: center;
+  margin-bottom: 34px;
+  font-size: 1.8rem;
+}
+label{
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+#search-input{
+  padding: 8px 10px;
+  width: min(90%, 200px);
+  outline: none;
+  font-size: .8rem;
+}
+#search-input:focus{
+  outline: 2px solid #2196F3;
+
+}
+#search-button{
+  background-color: #7f21ab;
+  color: #f5f6f7;
+  padding: 10px 8px;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  width: 70px;
+  text-align: center;
+}
+#search-button:active{
+  transform: scale(0.97);
+}
+.search-bar {
+  display: flex;
+  gap: 8px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  width: 100%;
+}
+.creature-info{
+  margin-top: 10px;
+  background-color: #f0f1f7;
+  width: 100%;
+  height: 30%;
+  padding: 20px 8px;
+  font-size: 11px;
+}
+.creature-info div{
+  margin-bottom: 4px;
+}
+
+#creature-name{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#creature-name,#creature-id{
+  font-size: 14px;
+}
+#types{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 12px 0;
+  text-transform: uppercase;
+  width: 52%;
+  font-size: 9px;
+}
+#types span{
+  padding: 6px 16px;
+  border-radius: 6px;
+}
+.creature-stats{
+  width: 100%;
+  margin-top: 10px;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: 70% 30%;
+  color: #f0f1f7;
+  font-size: .9rem;
+
+
+}
+.creature-stats div{
+  background-color: #7f21ab;
+  text-align: center;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.creature-stats div:nth-child(-n+2){
+  font-weight: bold;
+}
+#loading{
+  text-align: center;
+  display: none;
+  font-weight: bold;
+  animation: pulse 1s infinite;
+
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+@media (max-width:400px) {
+  #types{   
+    width: 80%;
+  }
+}
